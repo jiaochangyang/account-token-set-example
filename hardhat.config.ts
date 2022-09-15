@@ -11,22 +11,11 @@ const config: HardhatUserConfig = {
     localhost: {
       chainId: 31337,
     },
-    quorum: {
-      url: "http://localhost:22000",
-      gas: "auto",
-      gasPrice: 0,
-    },
   },
   solidity: {
     compilers: [
       {
-        version: "0.8.9",
-      },
-      {
-        version: "0.8.7",
-      },
-      {
-        version: "0.8.3",
+        version: "0.8.9"
       },
     ],
     settings: {
