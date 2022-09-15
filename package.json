@@ -1,0 +1,28 @@
+{
+  "name": "erc1155-key-test",
+  "version": "1.0.0",
+  "description": "ERC-1155 Key Set Test",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:localhost": "npx hardhat run ./scripts/deploy.ts --network localhost",
+    "coverage": "npx hardhat coverage",
+    "lint": "npx hardhat check",
+    "format": "npx prettier --write 'contracts/**/*.sol'",
+    "node": "npx hardhat node"
+  },
+  "keywords": [],
+  "author": "Chang Yang Jiao",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-solhint": "^2.0.1",
+    "hardhat": "^2.11.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-dev.23"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.0"
+  }
+}
